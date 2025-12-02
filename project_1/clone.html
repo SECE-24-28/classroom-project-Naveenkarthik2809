@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Aptitude Guru Hem</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #ffffff;
+      color: #111827;
+    }
+
+    /* ========= MAIN LAYOUT ========= */
+
+    .hero-wrapper {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      overflow: hidden;
+    }
+
+    .hero-card {
+      text-align: center;
+      max-width: 900px;
+      z-index: 10;
+    }
+
+    .hero-title {
+      font-size: 64px;
+      font-weight: 700;
+      color: #ff2e4c;
+      margin-bottom: 12px;
+    }
+
+    .hero-subtitle {
+      font-size: 22px;
+      font-weight: 600;
+      color: #000000;
+      line-height: 1.4;
+      margin-bottom: 22px;
+    }
+
+    .hero-subtitle span {
+      display: block;
+      color: #ff4f73;
+      font-weight: 600;
+      font-style: italic;
+      margin-top: 4px;
+    }
+
+    .hero-text {
+      font-size: 15.5px;
+      line-height: 1.8;
+      color: #4b5563;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .hero-text a {
+      color: #2563eb;
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+    }
+
+    /* ========= BUTTONS ========= */
+
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .hero-btn {
+      padding: 11px 30px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .hero-btn.primary {
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    .hero-btn.secondary {
+      background: #ff3045;
+      color: #ffffff;
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.15);
+    }
+
+    /* ========= DECORATIVE ICONS ========= */
+
+    .hero-icon {
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 500;
+      color: #ffffff;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+    }
+
+    /* positions + colors tuned to be close to your design */
+
+    .icon-trophy {
+      top: 18%;
+      left: 10%;
+      background: #ffb627;
+    }
+
+    .icon-book {
+      top: 40%;
+      left: 18%;
+      background: #ff6b5a;
+    }
+
+    .icon-pen {
+      top: 20%;
+      right: 11%;
+      background: #5b8dff;
+    }
+
+    .icon-code {
+      top: 46%;
+      right: 16%;
+      background: #ff7a3c;
+    }
+
+    .icon-branch {
+      bottom: 24%;
+      left: 12%;
+      background: #059669;
+    }
+
+    .icon-chip {
+      bottom: 20%;
+      left: 35%;
+      background: #a855f7;
+    }
+
+    .icon-nobug {
+      bottom: 22%;
+      right: 18%;
+      background: #9be15d;
+    }
+
+    /* Make it not totally broken on smaller screens */
+    @media (max-width: 900px) {
+      .hero-title {
+        font-size: 42px;
+      }
+      .hero-subtitle {
+        font-size: 18px;
+      }
+      .hero-text {
+        font-size: 14px;
+      }
+      .hero-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 26px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .hero-wrapper {
+        padding-top: 80px;
+      }
+      .hero-icon {
+        display: none; /* hide icons on very small screens to avoid mess */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-wrapper">
+    <!-- Decorative icon blocks -->
+    <div class="hero-icon icon-trophy">🏆</div>
+    <div class="hero-icon icon-book">📘</div>
+    <div class="hero-icon icon-pen">✏️</div>
+    <div class="hero-icon icon-code">&lt;/&gt;</div>
+    <div class="hero-icon icon-branch">🌿</div>
+    <div class="hero-icon icon-chip">🔌</div>
+    <div class="hero-icon icon-nobug">🐞</div>
+
+    <!-- Main hero content -->
+    <div class="hero-card">
+      <h1 class="hero-title">Aptitude Guru Hem</h1>
+
+      <h2 class="hero-subtitle">
+        At AGH, we shape futures and build skills that
+        <span>nurture your innovative spirit.</span>
+      </h2>
+
+      <p class="hero-text">
+        Where Success Meets Opportunity! Are you ready to embark on a transformative journey towards success?
+        At Aptitude Guru Hem, we are committed to providing you with the essential skills and knowledge to excel
+        in your professional endeavors. Our expert training in aptitude and coding equips you to conquer every
+        challenge, from company interview assessments to prestigious coding platforms like
+        <a href="#">LeetCode</a>,
+        <a href="#">GeeksForGeeks</a>,
+        <a href="#">HackerRank</a>,
+        and more.
+      </p>
+
+      <div class="hero-buttons">
+        <button class="hero-btn primary">Start Your Learning</button>
+        <button class="hero-btn secondary">Join a Live Demo</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+ vfr
