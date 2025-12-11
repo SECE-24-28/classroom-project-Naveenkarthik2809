@@ -6,8 +6,27 @@ import React from "react";
 //import ExcellenceSection from "./day3/ExcellenceSection";
 // import PositionComponent from "./position/position-component";
 // import ImpactGlance from "./impact/ImpactGlance";
-import OurPromiseComponent from "./promise/OurPromiseComponent.jsx";
 
+// import ShoppingCart from "./cart-component/cart-component";
+
+// function App() {
+//   return (
+//     <>
+//       <ShoppingCart />
+//     </>
+//   );
+// }
+
+// import OurPromiseComponent from "./promise/OurPromiseComponent.jsx";
+
+
+// function App() {
+//   return <OurPromiseComponent />
+// }
+
+// function App() {
+//   return <ImpactGlance />;
+// }
 
 // function App() {
 //   return <Flex/>;
@@ -20,12 +39,6 @@ import OurPromiseComponent from "./promise/OurPromiseComponent.jsx";
    
 //   }
 
-// function App() {
-//   return <ImpactGlance />;
-// }
-function App() {
-  return <OurPromiseComponent />
-}
 
 
 
@@ -49,6 +62,49 @@ function App() {
   //     </Routes>
   //   </Router>
   // );
+
+
 //}
 
-export default App;
+
+
+
+// import Furniture from "./FurnitureStyle/furniture-component";
+// function App() {
+//   return (
+//     <>
+//       <Furniture />
+//     </>
+//   );
+// }
+
+
+// import RegistrationPageComponent from "./registration/registration-page-component";
+// function App() {
+//   return (
+//     <>
+//       <RegistrationPageComponent />
+//     </>
+//   );
+// }
+
+
+
+// import AdditionOperationComponent from "./array/array-component";
+// function App() {
+//   return (
+//     <>
+//       <AdditionOperationComponent />
+//     </>
+//   );
+// }
+
+import Portfolio from "./Portfolio/Portfolio";
+
+function App() {
+  return <Portfolio />;
+}
+
+
+
+export default App;   
